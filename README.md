@@ -31,7 +31,7 @@ Hugo is designed to work well for any kind of website including blogs, tumbles, 
 
 Currently, we provide pre-built Hugo binaries for Windows, Linux, FreeBSD, NetBSD, DragonFly BSD, Open BSD, macOS (Darwin), and [Android](https://gist.github.com/bep/a0d8a26cf6b4f8bc992729b8e50b480b) for x64, i386 and ARM architectures.
 
-Hugo may also be compiled from source wherever the Go compiler tool chain can run, e.g. for other operating systems including Plan 9 and Solaris.
+Hugo may also be compiled from source wherever the Go compiler toolchain can run, e.g. for other operating systems including Plan 9 and Solaris.
 
 **Complete documentation is available at [Hugo Documentation](https://gohugo.io/getting-started/).**
 
@@ -64,13 +64,13 @@ Since Hugo 0.48, Hugo uses the Go Modules support built into Go 1.11 to build. T
 mkdir $HOME/src
 cd $HOME/src
 git clone https://github.com/gohugoio/hugo.git
-cd hugo
+cd Hugo
 go install
 ```
 
 **If you are a Windows user, substitute the `$HOME` environment variable above with `%USERPROFILE%`.**
 
-If you want to compile with Sass/SCSS support use `--tags extended` and make sure `CGO_ENABLED=1` is set in your go environment. If you don't want to have CGO enabled, you may use the following command to temporarily enable CGO only for hugo compilation:
+If you want to compile with Sass/SCSS support use `--tags extended` and make sure `CGO_ENABLED=1` is set in your go environment. If you don't want to have CGO enabled, you may use the following command to temporarily enable CGO only for Hugo compilation:
 
 ```bash
 CGO_ENABLED=1 go install --tags extended
@@ -78,7 +78,7 @@ CGO_ENABLED=1 go install --tags extended
 
 ## The Hugo Documentation
 
-The Hugo documentation now lives in its own repository, see https://github.com/gohugoio/hugoDocs. But we do keep a version of that documentation as a `git subtree` in this repository. To build the sub folder `/docs` as a Hugo site, you need to clone this repo:
+The Hugo documentation now lives in its own repository, see https://github.com/gohugoio/hugoDocs. But we do keep a version of that documentation as a `git subtree` in this repository. To build the subfolder `/docs` as a Hugo site, you need to clone this repo:
 
 ```bash
 git clone git@github.com:gohugoio/hugo.git
@@ -88,7 +88,7 @@ git clone git@github.com:gohugoio/hugo.git
 For a complete guide to contributing to Hugo, see the [Contribution Guide](CONTRIBUTING.md).
 
 We welcome contributions to Hugo of any kind including documentation, themes,
-organization, tutorials, blog posts, bug reports, issues, feature requests,
+the organization, tutorials, blog posts, bug reports, issues, feature requests,
 feature implementations, pull requests, answering questions on the forum,
 helping to manage issues, etc.
 
@@ -104,7 +104,7 @@ Please don't use the GitHub issue tracker to ask questions.
 If you believe you have found a defect in Hugo or its documentation, use
 the GitHub issue tracker to report the problem to the Hugo maintainers.
 If you're not sure if it's a bug or not, start by asking in the [discussion forum](https://discourse.gohugo.io).
-When reporting the issue, please provide the version of Hugo in use (`hugo version`).
+When reporting the issue, please provide the version of Hugo in use (`Hugo version`).
 
 ### Submitting Patches
 
@@ -113,7 +113,7 @@ If you are interested in helping with the project, we will help you with your co
 Hugo is a very active project with many contributions happening daily.
 
 We want to create the best possible product for our users and the best contribution experience for our developers,
-we have a set of guidelines which ensure that all contributions are acceptable.
+we have a set of guidelines that ensure that all contributions are acceptable.
 The guidelines are not intended as a filter or barrier to participation.
 If you are unfamiliar with the contribution process, the Hugo team will help you and teach you how to bring your contribution in accordance with the guidelines.
 
